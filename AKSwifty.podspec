@@ -68,4 +68,10 @@ Pod::Spec.new do |s|
     ss.frameworks = 'UIKit'
   end
 
+  s.subspec 'AKUIKit-DashboardView' do |ss|
+    ss.ios.deployment_target = '9.0'
+    ss.source_files = 'AKUIKit/AKDashboardView.swifty'
+    ss.frameworks = 'UIKit'
+  end
+
 end
