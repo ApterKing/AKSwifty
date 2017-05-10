@@ -13,7 +13,6 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/ApterKing/AKSwifty"
 
-
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
