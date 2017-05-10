@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "AKSwifty"
-  s.version      = "0.1.3"
+  s.version      = "0.1.2"
   s.summary      = "Personal Swifty ToolKit"
 
   s.description  = <<-DESC
@@ -70,7 +70,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'UIKit-DashboardView' do |ss|
     ss.ios.deployment_target = '9.0'
-    ss.source_files = 'AKUIKit/AKDashboardView.swifty'
+    ss.source_files = 'AKUIKit/AKDashboardView.swift'
     ss.frameworks = 'UIKit'
   end
 
