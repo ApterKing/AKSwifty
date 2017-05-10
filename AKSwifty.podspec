@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "AKSwifty"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "Personal Swifty ToolKit"
 
   s.description  = <<-DESC
@@ -56,19 +56,19 @@ Pod::Spec.new do |s|
 
   # --- SubSpec Settings --------------------------------------------------------- #
 
-  s.subspec 'AKExtension' do |ss|
+  s.subspec 'Extension' do |ss|
     ss.ios.deployment_target = '9.0'
     ss.source_files = 'AKExtension/Classes/*.swift'
     ss.frameworks = 'UIKit', 'Foundation', 'CoreGraphics'
   end
 
-  s.subspec 'AKUIKit-Base' do |ss|
+  s.subspec 'UIKit-Base' do |ss|
     ss.ios.deployment_target = '9.0'
     ss.source_files = 'AKUIKit/Base/*.swift'
     ss.frameworks = 'UIKit'
   end
 
-  s.subspec 'AKUIKit-DashboardView' do |ss|
+  s.subspec 'UIKit-DashboardView' do |ss|
     ss.ios.deployment_target = '9.0'
     ss.source_files = 'AKUIKit/AKDashboardView.swifty'
     ss.frameworks = 'UIKit'
