@@ -3,13 +3,13 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "AKSwifty"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "Personal Swifty ToolKit"
 
   s.description  = <<-DESC
 	Personal Swifty ToolKit
 	AKExtension: The Commonly used Swifty extension
-	
+	Base: Base-UIViewController UINavigationController	
                    DESC
 
   s.homepage     = "https://github.com/ApterKing/AKSwifty"
@@ -58,10 +58,14 @@ Pod::Spec.new do |s|
 
   s.subspec 'AKExtension' do |ss|
     ss.ios.deployment_target = '9.0'
-    
     ss.source_files = 'AKExtension/Classes/*.swift'
-   
     ss.frameworks = 'UIKit', 'Foundation', 'CoreGraphics'
+  end
+
+  s.subspec 'AKUIKit-Base' do |ss|
+    ss.ios.deployment_target = '9.0'
+    ss.source_files = 'AKUIKit/Base/*.swift'
+    ss.frameworks = 'UIKit'
   end
 
 end
