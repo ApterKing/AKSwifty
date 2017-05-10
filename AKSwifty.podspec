@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
 	Personal Swifty ToolKit
 	AKExtension: The Commonly used Swifty extension
+	
                    DESC
 
   s.homepage     = "https://github.com/ApterKing/AKSwifty"
