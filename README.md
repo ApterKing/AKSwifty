@@ -97,7 +97,7 @@ Personal Swifty ToolKit
        let cornerv2 = UIRectCorner.topRight.rawValue | UIRectCorner.bottomLeft.rawValue | UIRectCorner.bottomRight.rawValue
         view.round(byRoundingCorners: UIRectCorner(rawValue: cornerv2), cornerRadii: CGSize(width: 45, height: 45))
 		```  
-		![](http://ww1.sinaimg.cn/large/92ce04b2gy1ffh98z2k6wj20ke08g74h.jpg)
+		![](http://ww1.sinaimg.cn/large/92ce04b2gy1ffh9mwedvcj20ke08g74h.jpg)
 		
 		。。。还有更多你可以查看源码试着使用
 		
