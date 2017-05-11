@@ -191,10 +191,9 @@ public extension UIImage {
         
         // 返回二维码图片
         let qrImage = UIImage(ciImage: (colorFilter?.outputImage)!)
-        let dstSize = CGSize(size.width * UIScreen.main.scale, size.height * UIScreen.main.scale)
-        let imageRect = dstSize.width > dstSize.height ?
-            CGRect(x: (dstSize.width - dstSize.height) / 2, y: 0, width: dstSize.height, height: dstSize.height) :
-            CGRect(x: 0, y: (dstSize.height - dstSize.width) / 2, width: dstSize.width, height: dstSize.width)
+        let imageRect = size.width > size.height ?
+            CGRect(x: (size.width - size.height) / 2, y: 0, width: size.height, height: size.height) :
+            CGRect(x: 0, y: (size.height - size.width) / 2, width: size.width, height: size.width)
         UIGraphicsBeginImageContextWithOptions(imageRect.size, false, UIScreen.main.scale)
         defer {
             UIGraphicsEndImageContext()

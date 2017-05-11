@@ -1,0 +1,12 @@
+PODS:
+  - AKSwifty/Extension (0.1.2)
+
+DEPENDENCIES:
+  - AKSwifty/Extension
+
+SPEC CHECKSUMS:
+  AKSwifty: 76b6b8da047315bda69afe87f8074d23f4e39ba9
+
+PODFILE CHECKSUM: d9dfc3c38b989ece29dfe8f24b20961b4856fd61
+
+COCOAPODS: 1.2.1
