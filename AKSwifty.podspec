@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "AKSwifty"
-  s.version      = "0.1.3"
+  s.version      = "0.1.4"
   s.summary      = "Personal Swifty ToolKit"
 
   s.description  = <<-DESC
