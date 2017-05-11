@@ -38,8 +38,8 @@ Pod::Spec.new do |s|
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.requires_arc = true
 
-  s.dependency = 'AKUIKitBase'
-  s.dependency = 'AKExtensions'
-  s.dependency = 'AKDashboardView'
+  s.dependency 'AKUIKitBase', '~> 0.1.0'
+  s.dependency 'AKExtensions', '~> 1.0.2'
+  s.dependency 'AKDashboardView', '~> 1.0.0'
 
 end
