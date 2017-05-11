@@ -3,13 +3,14 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "AKSwifty"
-  s.version      = "0.1.2"
+  s.version      = "0.1.3"
   s.summary      = "Personal Swifty ToolKit"
 
   s.description  = <<-DESC
 	Personal Swifty ToolKit
-	AKExtension: The Commonly used Swifty extension
-	Base: Base-UIViewController UINavigationController	
+	AKUIKitBase: Base-UIViewController UINavigationController	
+	AKExtensions: The Commonly used Swifty extension
+	AKDashboardView: likes oil dashboard
                    DESC
 
   s.homepage     = "https://github.com/ApterKing/AKSwifty"
@@ -29,49 +30,16 @@ Pod::Spec.new do |s|
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  #s.exclude_files = "Classes/Exclude"
-
-  # s.public_header_files = "Classes/**/*.h"
-
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
-
-  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
+  s.source_files  = "Classes/*.swift"
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-
-  # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
-
-  # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
-
+  s.framework  = "Foundation"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.requires_arc = true
 
-  # --- SubSpec Settings --------------------------------------------------------- #
-
-  s.subspec 'Extension' do |ss|
-    ss.ios.deployment_target = '9.0'
-    ss.source_files = 'AKExtension/Classes/*.swift'
-    ss.frameworks = 'UIKit', 'Foundation', 'CoreGraphics'
-  end
-
-  s.subspec 'UIKit-Base' do |ss|
-    ss.ios.deployment_target = '9.0'
-    ss.source_files = 'AKUIKit/Base/*.swift'
-    ss.frameworks = 'UIKit'
-  end
-
-  s.subspec 'UIKit-DashboardView' do |ss|
-    ss.ios.deployment_target = '9.0'
-    ss.source_files = 'AKUIKit/AKDashboardView.swift'
-    ss.frameworks = 'UIKit'
-  end
+  s.dependency = 'AKUIKitBase'
+  s.dependency = 'AKExtensions'
+  s.dependency = 'AKDashboardView'
 
 end

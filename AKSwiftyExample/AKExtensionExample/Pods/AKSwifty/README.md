@@ -1,2 +1,0 @@
-# AKSwifty
-Personal Swifty ToolKit

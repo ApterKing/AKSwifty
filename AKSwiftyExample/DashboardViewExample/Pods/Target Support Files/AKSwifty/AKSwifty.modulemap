@@ -1,6 +1,0 @@
-framework module AKSwifty {
-  umbrella header "AKSwifty-umbrella.h"
-
-  export *
-  module * { export * }
-}
