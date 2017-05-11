@@ -6,7 +6,6 @@
 //
 //
 
-import Foundation
 
 // UIKit Base
 import AKUIKitBase
@@ -16,5 +15,3 @@ import AKExtensions
 
 // 仪表盘
 import AKDashboardView
-
-public class AKSwifty {}
