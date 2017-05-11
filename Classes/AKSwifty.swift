@@ -16,3 +16,5 @@ import AKExtensions
 
 // 仪表盘
 import AKDashboardView
+
+public class AKSwifty {}
