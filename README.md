@@ -40,6 +40,7 @@ Personal Swifty ToolKit
 		
 		...
 		```
+		
 		![](http://ww1.sinaimg.cn/large/92ce04b2gy1ffh8ip2m5wj20ke0cqq5y.jpg)
 		
 		生成二维码
@@ -47,8 +48,9 @@ Personal Swifty ToolKit
 		``` swift
 		let image = UIImage.generateQRImage(QRCodeString: "https://github.com/ApterKing/AKSwifty", logo: UIImage(named: "logo"), size: CGSize(width: 1024, height: 1024))
 		let imageView = ...
-		```  
-		![](http://ww1.sinaimg.cn/large/92ce04b2gy1ffh90r3y68j20em0bqwfz.jpg)
+		```
+		
+		![](http://ww1.sinaimg.cn/large/92ce04b2gy1ffh9rcrxkwj20em0bqwfz.jpg)
 		
 	- String+Extension  
 		Base64转换
@@ -96,8 +98,9 @@ Personal Swifty ToolKit
         
        let cornerv2 = UIRectCorner.topRight.rawValue | UIRectCorner.bottomLeft.rawValue | UIRectCorner.bottomRight.rawValue
         view.round(byRoundingCorners: UIRectCorner(rawValue: cornerv2), cornerRadii: CGSize(width: 45, height: 45))
-		```  
-		![](http://ww1.sinaimg.cn/large/92ce04b2gy1ffh9mwedvcj20ke08g74h.jpg)
+		```
+		
+		![](http://ww1.sinaimg.cn/large/92ce04b2gy1ffh9sbqhfcj20ke08g74h.jpg)
 		
 		。。。还有更多你可以查看源码试着使用
 		
