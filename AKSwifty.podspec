@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "AKSwifty"
-  s.version      = "0.1.4"
+  s.version      = "0.1.5"
   s.summary      = "Personal Swifty ToolKit"
 
   s.description  = <<-DESC
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source_files  = "Classes/*.swift"
+  s.source_files  = "Pod/Classes/*.swift"
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.framework  = "Foundation"
@@ -38,8 +38,8 @@ Pod::Spec.new do |s|
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.requires_arc = true
 
-  s.dependency 'AKUIKitBase', '~> 0.1.0'
-  s.dependency 'AKExtensions', '~> 1.0.2'
-  s.dependency 'AKDashboardView', '~> 1.0.0'
+  s.dependency 'AKUIKitBase', '~> 0.1.1'
+  s.dependency 'AKExtensions', '~> 1.0.3'
+  s.dependency 'AKDashboardView', '~> 1.0.1'
 
 end
